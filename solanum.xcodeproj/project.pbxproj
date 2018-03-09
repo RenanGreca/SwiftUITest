@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20A373F1EB9B64BFCDF287DF /* Pods_solanumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8093F84AE30D67EFD5C3E37D /* Pods_solanumTests.framework */; };
+		3F6D072E2052C0C4008FE568 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D072D2052C0C4008FE568 /* Strings.swift */; };
+		3F6D07302052EEDD008FE568 /* alert.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6D072F2052EEDD008FE568 /* alert.caf */; };
+		3F6D073B2053051D008FE568 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D073A2053051D008FE568 /* UITests.swift */; };
+		3F6D073D2053058E008FE568 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D073C2053058E008FE568 /* TestExtensions.swift */; };
+		3FFA1D3A2051C5AA00AFE588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA1D392051C5AA00AFE588 /* AppDelegate.swift */; };
+		3FFA1D412051C5AA00AFE588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFA1D3F2051C5AA00AFE588 /* Main.storyboard */; };
+		3FFA1D432051C5AA00AFE588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFA1D422051C5AA00AFE588 /* Assets.xcassets */; };
+		3FFA1D462051C5AA00AFE588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFA1D442051C5AA00AFE588 /* LaunchScreen.storyboard */; };
+		3FFA1D512051C5AA00AFE588 /* solanumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA1D502051C5AA00AFE588 /* solanumTests.swift */; };
+		3FFA1D642051D04300AFE588 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA1D632051D04300AFE588 /* SettingsViewController.swift */; };
+		3FFA1D662051D05500AFE588 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA1D652051D05500AFE588 /* TimerViewController.swift */; };
+		3FFA1D682051D06700AFE588 /* PresetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA1D672051D06700AFE588 /* PresetsViewController.swift */; };
+		3FFA1D6A2051D07100AFE588 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA1D692051D07100AFE588 /* HistoryViewController.swift */; };
+		3FFA1D6C2051D08100AFE588 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA1D6B2051D08100AFE588 /* WorkViewController.swift */; };
+		3FFA1D6E2051D0C100AFE588 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA1D6D2051D0C100AFE588 /* DetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FFA1D4D2051C5AA00AFE588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FFA1D2E2051C5AA00AFE588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FFA1D352051C5AA00AFE588;
+			remoteInfo = solanum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3351A10FA0C28B95F56A2D15 /* Pods-solanumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-solanumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-solanumTests/Pods-solanumTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F6D072D2052C0C4008FE568 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		3F6D072F2052EEDD008FE568 /* alert.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alert.caf; sourceTree = "<group>"; };
+		3F6D0734205302EB008FE568 /* KIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6D073A2053051D008FE568 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		3F6D073C2053058E008FE568 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		3FFA1D362051C5AA00AFE588 /* solanum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solanum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFA1D392051C5AA00AFE588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FFA1D402051C5AA00AFE588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FFA1D422051C5AA00AFE588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FFA1D452051C5AA00AFE588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FFA1D472051C5AA00AFE588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FFA1D4C2051C5AA00AFE588 /* solanumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = solanumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFA1D502051C5AA00AFE588 /* solanumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = solanumTests.swift; sourceTree = "<group>"; };
+		3FFA1D522051C5AA00AFE588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FFA1D632051D04300AFE588 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3FFA1D652051D05500AFE588 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		3FFA1D672051D06700AFE588 /* PresetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetsViewController.swift; sourceTree = "<group>"; };
+		3FFA1D692051D07100AFE588 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		3FFA1D6B2051D08100AFE588 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		3FFA1D6D2051D0C100AFE588 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		8093F84AE30D67EFD5C3E37D /* Pods_solanumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_solanumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B05010EC4E1630BE505271 /* Pods-solanumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-solanumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-solanumTests/Pods-solanumTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FFA1D332051C5AA00AFE588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFA1D492051C5AA00AFE588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A373F1EB9B64BFCDF287DF /* Pods_solanumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FFA1D2D2051C5AA00AFE588 = {
+			isa = PBXGroup;
+			children = (
+				3FFA1D382051C5AA00AFE588 /* solanum */,
+				3FFA1D4F2051C5AA00AFE588 /* solanumTests */,
+				3FFA1D372051C5AA00AFE588 /* Products */,
+				79082AE512F93BFFDECCB46C /* Pods */,
+				A2CA64576CF2FC81AEAEE72E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FFA1D372051C5AA00AFE588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA1D362051C5AA00AFE588 /* solanum.app */,
+				3FFA1D4C2051C5AA00AFE588 /* solanumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FFA1D382051C5AA00AFE588 /* solanum */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA1D392051C5AA00AFE588 /* AppDelegate.swift */,
+				3F6D072D2052C0C4008FE568 /* Strings.swift */,
+				3FFA1D632051D04300AFE588 /* SettingsViewController.swift */,
+				3FFA1D652051D05500AFE588 /* TimerViewController.swift */,
+				3FFA1D672051D06700AFE588 /* PresetsViewController.swift */,
+				3FFA1D692051D07100AFE588 /* HistoryViewController.swift */,
+				3FFA1D6B2051D08100AFE588 /* WorkViewController.swift */,
+				3FFA1D6D2051D0C100AFE588 /* DetailsViewController.swift */,
+				3FFA1D3F2051C5AA00AFE588 /* Main.storyboard */,
+				3FFA1D422051C5AA00AFE588 /* Assets.xcassets */,
+				3FFA1D442051C5AA00AFE588 /* LaunchScreen.storyboard */,
+				3F6D072F2052EEDD008FE568 /* alert.caf */,
+				3FFA1D472051C5AA00AFE588 /* Info.plist */,
+			);
+			path = solanum;
+			sourceTree = "<group>";
+		};
+		3FFA1D4F2051C5AA00AFE588 /* solanumTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA1D502051C5AA00AFE588 /* solanumTests.swift */,
+				3FFA1D522051C5AA00AFE588 /* Info.plist */,
+				3F6D073A2053051D008FE568 /* UITests.swift */,
+				3F6D073C2053058E008FE568 /* TestExtensions.swift */,
+			);
+			path = solanumTests;
+			sourceTree = "<group>";
+		};
+		79082AE512F93BFFDECCB46C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4B05010EC4E1630BE505271 /* Pods-solanumTests.debug.xcconfig */,
+				3351A10FA0C28B95F56A2D15 /* Pods-solanumTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2CA64576CF2FC81AEAEE72E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F6D0734205302EB008FE568 /* KIF.framework */,
+				8093F84AE30D67EFD5C3E37D /* Pods_solanumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FFA1D352051C5AA00AFE588 /* solanum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FFA1D552051C5AA00AFE588 /* Build configuration list for PBXNativeTarget "solanum" */;
+			buildPhases = (
+				3FFA1D322051C5AA00AFE588 /* Sources */,
+				3FFA1D332051C5AA00AFE588 /* Frameworks */,
+				3FFA1D342051C5AA00AFE588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = solanum;
+			productName = solanum;
+			productReference = 3FFA1D362051C5AA00AFE588 /* solanum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FFA1D4B2051C5AA00AFE588 /* solanumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FFA1D582051C5AA00AFE588 /* Build configuration list for PBXNativeTarget "solanumTests" */;
+			buildPhases = (
+				8FE9D49128A228D11C1D51A1 /* [CP] Check Pods Manifest.lock */,
+				3FFA1D482051C5AA00AFE588 /* Sources */,
+				3FFA1D492051C5AA00AFE588 /* Frameworks */,
+				3FFA1D4A2051C5AA00AFE588 /* Resources */,
+				EBB812583838636C4FE90EF3 /* [CP] Embed Pods Frameworks */,
+				025FA8A9AC26C5D024B0C236 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FFA1D4E2051C5AA00AFE588 /* PBXTargetDependency */,
+			);
+			name = solanumTests;
+			productName = solanumTests;
+			productReference = 3FFA1D4C2051C5AA00AFE588 /* solanumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FFA1D2E2051C5AA00AFE588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = renangreca;
+				TargetAttributes = {
+					3FFA1D352051C5AA00AFE588 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3FFA1D4B2051C5AA00AFE588 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FFA1D352051C5AA00AFE588;
+					};
+				};
+			};
+			buildConfigurationList = 3FFA1D312051C5AA00AFE588 /* Build configuration list for PBXProject "solanum" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FFA1D2D2051C5AA00AFE588;
+			productRefGroup = 3FFA1D372051C5AA00AFE588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FFA1D352051C5AA00AFE588 /* solanum */,
+				3FFA1D4B2051C5AA00AFE588 /* solanumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FFA1D342051C5AA00AFE588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFA1D462051C5AA00AFE588 /* LaunchScreen.storyboard in Resources */,
+				3F6D07302052EEDD008FE568 /* alert.caf in Resources */,
+				3FFA1D432051C5AA00AFE588 /* Assets.xcassets in Resources */,
+				3FFA1D412051C5AA00AFE588 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFA1D4A2051C5AA00AFE588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025FA8A9AC26C5D024B0C236 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-solanumTests/Pods-solanumTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE9D49128A228D11C1D51A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-solanumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB812583838636C4FE90EF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-solanumTests/Pods-solanumTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-solanumTests/Pods-solanumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FFA1D322051C5AA00AFE588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFA1D3A2051C5AA00AFE588 /* AppDelegate.swift in Sources */,
+				3FFA1D662051D05500AFE588 /* TimerViewController.swift in Sources */,
+				3F6D072E2052C0C4008FE568 /* Strings.swift in Sources */,
+				3FFA1D642051D04300AFE588 /* SettingsViewController.swift in Sources */,
+				3FFA1D6C2051D08100AFE588 /* WorkViewController.swift in Sources */,
+				3FFA1D6E2051D0C100AFE588 /* DetailsViewController.swift in Sources */,
+				3FFA1D6A2051D07100AFE588 /* HistoryViewController.swift in Sources */,
+				3FFA1D682051D06700AFE588 /* PresetsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFA1D482051C5AA00AFE588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFA1D512051C5AA00AFE588 /* solanumTests.swift in Sources */,
+				3F6D073D2053058E008FE568 /* TestExtensions.swift in Sources */,
+				3F6D073B2053051D008FE568 /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FFA1D4E2051C5AA00AFE588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FFA1D352051C5AA00AFE588 /* solanum */;
+			targetProxy = 3FFA1D4D2051C5AA00AFE588 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FFA1D3F2051C5AA00AFE588 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FFA1D402051C5AA00AFE588 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FFA1D442051C5AA00AFE588 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FFA1D452051C5AA00AFE588 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FFA1D532051C5AA00AFE588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FFA1D542051C5AA00AFE588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FFA1D562051C5AA00AFE588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9L342AVFZ;
+				INFOPLIST_FILE = solanum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renangreca.solanum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FFA1D572051C5AA00AFE588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9L342AVFZ;
+				INFOPLIST_FILE = solanum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renangreca.solanum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FFA1D592051C5AA00AFE588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4B05010EC4E1630BE505271 /* Pods-solanumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9L342AVFZ;
+				INFOPLIST_FILE = solanumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renangreca.solanumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/solanum.app/solanum";
+			};
+			name = Debug;
+		};
+		3FFA1D5A2051C5AA00AFE588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3351A10FA0C28B95F56A2D15 /* Pods-solanumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9L342AVFZ;
+				INFOPLIST_FILE = solanumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = renangreca.solanumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/solanum.app/solanum";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FFA1D312051C5AA00AFE588 /* Build configuration list for PBXProject "solanum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFA1D532051C5AA00AFE588 /* Debug */,
+				3FFA1D542051C5AA00AFE588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FFA1D552051C5AA00AFE588 /* Build configuration list for PBXNativeTarget "solanum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFA1D562051C5AA00AFE588 /* Debug */,
+				3FFA1D572051C5AA00AFE588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FFA1D582051C5AA00AFE588 /* Build configuration list for PBXNativeTarget "solanumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFA1D592051C5AA00AFE588 /* Debug */,
+				3FFA1D5A2051C5AA00AFE588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FFA1D2E2051C5AA00AFE588 /* Project object */;
+}
