@@ -164,6 +164,12 @@ class UITests: KIFTestCase {
 
     }
     
+    func test99DisableDebugmode() {
+        tester().tapView(withAccessibilityLabel: "Settings")
+        tester().waitForView(withAccessibilityLabel: "Debug Mode")
+        tester().setOn(false, forSwitchWithAccessibilityLabel: "Debug Mode")
+    }
+    
     
     // Helpers
     

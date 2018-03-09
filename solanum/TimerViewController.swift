@@ -75,15 +75,15 @@ class TimerViewController: UIViewController, UITextFieldDelegate {
     
     // Inputs
     @IBAction func workTimeDidChange(_ sender: UISlider) {
-        self.workLabel.text = "\(sender.value) minutes"
+        self.workLabel.text = "\(Int(sender.value)) minutes"
     }
     
     @IBAction func breakTimeDidChange(_ sender: UISlider) {
-        self.breakLabel.text = "\(sender.value) minutes"
+        self.breakLabel.text = "\(Int(sender.value)) minutes"
     }
     
     @IBAction func repsDidChange(_ sender: UIStepper) {
-        self.repsLabel.text = "\(sender.value) time\( sender.value == 1 ? "" : "s" )"
+        self.repsLabel.text = "\(Int(sender.value)) time\( sender.value == 1 ? "" : "s" )"
     }
     
     
