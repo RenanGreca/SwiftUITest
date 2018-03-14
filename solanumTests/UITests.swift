@@ -10,19 +10,29 @@ import UIKit
 import KIF
 
 class UITests: KIFTestCase {
-
-    func test00ClearHistory() {
+    
+    override func setUp() {
+        super.setUp()
         
         tester().tapView(withAccessibilityLabel: "Settings")
-//        viewTester().usingLabel("Settings").tap()
-        
         tester().setOn(true, forSwitchWithAccessibilityLabel: "Debug Mode")
+    }
+    
+    override func tearDown() {
+        tester().tapView(withAccessibilityLabel: "Settings")
+        tester().setOn(false, forSwitchWithAccessibilityLabel: "Debug Mode")
         
-        print("hello there")
+        super.tearDown()
+    }
+
+    func test00ClearHistory() {
+        tester().tapView(withAccessibilityLabel: "Settings")
+        
         tester().tapView(withAccessibilityLabel: "Clear History")
         tester().tapView(withAccessibilityLabel: "No")
         
-//        tester().setOn(false, forSwitchWithAccessibilityLabel: "Debug Mode")
+        tester().tapView(withAccessibilityLabel: "Clear History")
+        tester().tapView(withAccessibilityLabel: "Yes")
     }
     
     func test01TabBarButtons() {
@@ -44,7 +54,7 @@ class UITests: KIFTestCase {
         tester().tapView(withAccessibilityLabel: "Timer")
         
         // 2
-        tester().enterText("Set up a test\n",
+        tester().clearText(fromAndThenEnterText: "Test the timer\n",
                            intoViewWithAccessibilityLabel: "Task Name")
 //        tester().tapView(withAccessibilityLabel: "done")
        
@@ -93,12 +103,35 @@ class UITests: KIFTestCase {
         }
     }
     
+    func test11CancelPreset() {
+        // 1
+        tester().tapView(withAccessibilityLabel: "Timer")
+        
+        // 2
+        var slider = tester().waitForView(withAccessibilityLabel: "Work Time Slider") as! UISlider
+        tester().clearText(fromAndThenEnterText: "Test the timer\n",
+                           intoViewWithAccessibilityLabel: "Task Name")
+        
+        let oldValue = slider.value
+        
+        // tap preset
+        tester().tapView(withAccessibilityLabel: "Presets")
+        tester().tapView(withAccessibilityLabel: "Cancel")
+        
+        // wait for view to return
+        slider = tester().waitForView(withAccessibilityLabel: "Work Time Slider") as! UISlider
+        
+        let newValue = slider.value
+        
+        XCTAssertEqual(oldValue, newValue, "Slider value should not have changed!")
+    }
+    
     func test20StartTimerAndWaitForFinish() {
         // 1
         tester().tapView(withAccessibilityLabel: "Timer")
         
         // 2
-        tester().clearText(fromAndThenEnterText: "Test the timer\n", intoViewWithAccessibilityLabel: "Task Name")
+        tester().clearText(fromAndThenEnterText: "\n", intoViewWithAccessibilityLabel: "Task Name")
         
         // 3
         tester().setValue(1, forSliderWithAccessibilityLabel: "Work Time Slider")
@@ -116,11 +149,8 @@ class UITests: KIFTestCase {
             tester().tapStepper(withAccessibilityLabel: "Reps Stepper", increment: .decrement)
         }
         
-        tester().wait(forTimeInterval: 1)
         tester().tapStepper(withAccessibilityLabel: "Reps Stepper", increment: .increment)
-        tester().wait(forTimeInterval: 1)
         tester().tapStepper(withAccessibilityLabel: "Reps Stepper", increment: .increment)
-        tester().wait(forTimeInterval: 1)
         
         // 6
         KIFUITestActor.setDefaultTimeout(60)

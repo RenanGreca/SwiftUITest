@@ -454,7 +454,7 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XiQ-Rs-DKG" kind="unwind" unwindAction="giveupWithSegue:" id="D8q-lu-RZI"/>
+                                    <segue destination="XiQ-Rs-DKG" kind="unwind" identifier="finishWork" unwindAction="giveupWithSegue:" id="D8q-lu-RZI"/>
                                 </connections>
                             </button>
                         </subviews>

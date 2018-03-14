@@ -40,12 +40,8 @@ class WorkViewController: UIViewController {
         super.viewDidLoad()
         
         let soundURL = Bundle.main.url(forResource: "alert", withExtension: "caf")
-        do {
-            try self.alertSound = AVAudioPlayer(contentsOf: soundURL!)
-            self.alertSound.prepareToPlay()
-        } catch {
-            print("error loading sound")
-        }
+        try? self.alertSound = AVAudioPlayer(contentsOf: soundURL!)
+        self.alertSound.prepareToPlay()
         // Do any additional setup after loading the view.
     }
     
@@ -57,11 +53,6 @@ class WorkViewController: UIViewController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     // MARK: - Navigation
 
@@ -128,8 +119,8 @@ class WorkViewController: UIViewController {
                 self.reps? -= 1
                 
                 if self.reps == 0 {
-                    self.dismiss(animated: true, completion: nil)
-//                    self.performSegue(withIdentifier: "finishWork", sender: self)
+//                    self.dismiss(animated: true, completion: nil)
+                    self.performSegue(withIdentifier: "finishWork", sender: self)
                     return
                 }
                 
